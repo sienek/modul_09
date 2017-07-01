@@ -1,0 +1,29 @@
+{
+  "name": "modul_09",
+  "version": "1.0.0",
+  "description": "Modul about JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "kodilla-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sienek/modul_09.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Daniel Sienkiewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sienek/modul_09/issues"
+  },
+  "homepage": "https://github.com/sienek/modul_09#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
