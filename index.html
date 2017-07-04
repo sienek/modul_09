@@ -7,7 +7,21 @@
 </head>
 <body>
     <p>
-    	JavaScript Zadanie 8-4
+    	JavaScript Zadanie 8-6
+    </p>
+    <p>
+    	INSTRUKCJE WARUNKOWE
+    </p>
+    <p>
+        Wprowadź wartości parametrów a i b.
+    </p>
+    <form onreset="calculate()">
+        a = <input type="number" id="a" value="0" onchange="calculate()"><br><br>
+    	b = <input type="number" id="b" value="0" onchange="calculate()"> <br> <br>
+        <input type="reset" onclick="reset()">
+    </form>
+    <p>
+    	Wartość wyrażenia a<sup>2</sup> + 2ab - b<sup>2</sup> jest  <span id="result"></span>
     </p>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
