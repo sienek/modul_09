@@ -4,4 +4,11 @@ body {
 p {
   text-align: center; }
 
+input {
+	outline: 0;
+}
+
+input.error {
+	border: 1px solid #ff0000;
+}
 /*# sourceMappingURL=style.css.map */
