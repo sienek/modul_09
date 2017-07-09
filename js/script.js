@@ -1,4 +1,23 @@
-var name //deklaracje zmiennej
-name = prompt('Enter your name'); //wywołanie okienka wprowadzania wartości zmiennej "name"
-// alert('Hello, ' + name); // wyświetlenie okna z wartością zmiannej "name"
-console.log('Hello, ' + name); //wwyświetlenie wartości zmiennej "name" w konsoli
+var textOrigin='Velociraptor is a genus of herbivorous ceratopsid dinosaur that first appeared during the late Maastrichtian stage of the late Cretaceous period.'; 
+
+console.log(textOrigin); 
+
+
+function uppercase (text) {
+	return text.toUpperCase();
+}
+
+function display (text){
+	document.getElementById("result").innerHTML =text;
+}
+
+function processText(){
+	var dinosaur=document.getElementById("name").value;
+	//console.log(uppercase(dinosaur));
+	text=textOrigin.replace('Velociraptor',uppercase(dinosaur));
+	//console.log(text); 
+	text=text.slice(0,text.length/2)+'...';
+	//console.log(text);
+	display(text);
+}
+
