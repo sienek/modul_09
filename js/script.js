@@ -10,16 +10,23 @@ function addSpaces(starsNr, branchNr){
 	return spaces;
 };
 
+
 function drawBranch(starsNr){
-	var stars = '*'
+	var stars = '*';
+	var tree;
+	tree = addSpaces(starsNr, -1) + stars;
+	document.getElementById("result").innerHTML =tree+"\n";
 	console.log(addSpaces(starsNr, -1) + stars); //rysuje 1 gwizdkę na szczycie
 	for (var k = 0; k < starsNr -1; k++) {
 		stars =stars + '**'; //dodaje po 2 gwiazdki w każdym rzędzie
 		console.log(addSpaces(starsNr, k) + stars); //rysuje spacje i rzędy gwiazdek
 		//	console.log(stars);
+		tree = addSpaces(starsNr, -1) + stars;
+		document.getElementById("result").innerHTML =tree+"\n";
 	};
 	console.log(addSpaces(starsNr, -1) + 'M'); //rysuje "pien"
 };
+
 
 function drawTree(){
 	drawBranch(document.getElementById("name").value);
