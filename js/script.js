@@ -7,18 +7,25 @@ var span = $("span");
 
 
 var spanArray = $("div div>p").toArray();
-    
-    // var span = $("div>p:odd");
-    var span = $(spanArray[4]);
+var $span = $(spanArray);
 
-    span.each(function(index, element) {
-    	
-    	//$("span:even").css('color', 'red');
-    	
+function createButtons() {
+    $span.each(function(index, element) {
     	var button = $('<button class="btn" data-tmp="' + (index + 1) + '">Click me</button>');
-		$(element).append(button);
-
-		$(button).click(function(){
-			alert($(this).attr("data-tmp"));
+    	$(element).append(button);
     });
+}
+
+createButtons();
+
+// $('button').click(function(){
+//     alert($(this).attr("data-tmp"));
+// });
+
+$('body').on('click', 'button', function(){
+    alert($(this).attr("data-tmp"));
 });
+
+createButtons();
+
+
