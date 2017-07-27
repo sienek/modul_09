@@ -4,4 +4,34 @@ body {
 p {
   text-align: center; }
 
+.container {
+  width: 400px;
+  margin: 0 auto; }
+
+.carousel-display {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: red;
+  overflow: hidden; }
+  .carousel-display ul {
+    padding: 0;
+    margin: 0;
+    width: 2000px; }
+  .carousel-display li {
+    list-style: none;
+    float: left; }
+
+.carousel-indicator {
+  text-align: center;
+  background-color: green; }
+  .carousel-indicator ul {
+    padding: 0;
+    margin: 0; }
+  .carousel-indicator li {
+    list-style-type: circle;
+    float: left;
+    margin: 0 15px;
+    font-size: 32px; }
+
 /*# sourceMappingURL=style.css.map */
