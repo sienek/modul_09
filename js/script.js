@@ -1,4 +1,20 @@
-var name //deklaracje zmiennej
-name = prompt('Enter your name'); //wywołanie okienka wprowadzania wartości zmiennej "name"
-// alert('Hello, ' + name); // wyświetlenie okna z wartością zmiannej "name"
-console.log('Hello, ' + name); //wwyświetlenie wartości zmiennej "name" w konsoli
+function Phone(brand, price, color) {
+    this.brand = brand;
+    this.price = price;
+    this.color = color;
+}
+
+Phone.prototype.printInfo = function() {
+    console.log("The phone brand is " + this.brand + ", color is " + this.color + " and the price is " + this.price + ".");
+}
+
+var iPhone6S = new Phone("Apple", 2250, "silver");
+var SamsungGalaxyS6 = new Phone("Samsung", 1550, "black");
+var OnePlusOne = new Phone("OnePlus", 2000, "red");
+
+
+iPhone6S.printInfo(); 
+SamsungGalaxyS6.printInfo(); 
+OnePlusOne.printInfo(); 
+
+
