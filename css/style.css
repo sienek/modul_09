@@ -4,4 +4,40 @@ body {
 p {
   text-align: center; }
 
+.column-container {
+  min-width: 800px;
+  max-width: 1200px;
+  min-height: 200px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: yellow; }
+
+.column {
+  display: inline-block;
+  background-color: green;
+  width: 200px;
+  height: 100%;
+  vertical-align: top; }
+
+.column-card-list {
+  list-style-type: none;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  height: 100%; }
+
+.card {
+  background-color: blue;
+  margin: 5px; }
+  .card p {
+    margin: 0; }
+
+.column-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.card-description {
+  overflow-wrap: break-word; }
+
 /*# sourceMappingURL=style.css.map */
